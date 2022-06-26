@@ -1,22 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Car from './Car';
 import reportWebVitals from './reportWebVitals';
 import Calculadora from './Calculadora';
-import RefTutorial from './Hooks/RefTutorial';
-import UseLayoutEffectTutorial from './Hooks/UseLayoutEffectTutorial';
-import ContextTutorial from './Hooks/ContextTutorial';
-import CallbackTutorial from './Hooks/UseCallback';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Calculadora/>
-    {/* <RefTutorial/> */}
-    {/* <UseLayoutEffectTutorial/> */}
-    {/* <ContextTutorial /> */}
-    {/* <CallbackTutorial /> */}
   </React.StrictMode>
 );
 
