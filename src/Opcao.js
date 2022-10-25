@@ -1,9 +1,5 @@
-/* eslint-disable no-undef */
-
-import { useState } from "react";
 
 const Opcao = ({data, double = false, styles, onClick}) =>{
-    const showValues = (e) => console.log(e);
     
     return(
         <>

@@ -1,12 +1,8 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-self-assign */
-/* eslint-disable no-unused-vars */
-import Opcao from "./Opcao";
-import stylesheet from './index.css'
-import { createContext, useEffect, useLayoutEffect, useState } from "react";
-import Visor from "./Visor";
-const ValueContext = createContext()
 
+import Opcao from "./Opcao";
+import './index.css'
+import {  useEffect, useLayoutEffect, useState } from "react";
+import Visor from "./Visor";
 function Calculadora (){
     let [values, setValues] = useState({
         valorA: 0,
@@ -52,7 +48,10 @@ function Calculadora (){
                 valorB: 0,
                 operacao: '' })
         }else{
-            String(values.valorA).length > 9 ? setValues({...values, valorA: Number(values.valorA).toExponential(3)}) : ''
+            if(values.valorA.length > 9){
+
+                setValues({...values, valorA: Number(values.valorA).toExponential(3)})
+          } 
 
         }
 
